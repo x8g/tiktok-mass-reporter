@@ -13,6 +13,11 @@ proxiesloaded = False
 proxies = []
 proxy = []
 os.system(f'title tiktok reporter ^| github/x8g')
+Anime.Fade(Center.Center(menu), Colors.blue_to_purple, Colorate.Vertical, interval=0.05, time=5)
+Anime.Fade(Center.Center("Tiktok Mass Reporter"), Colors.blue_to_purple, Colorate.Vertical, interval=0.05, time=2)
+Anime.Fade(Center.Center("By zt#7380"), Colors.blue_to_purple, Colorate.Vertical, interval=0.01, time=3)
+Anime.Fade(Center.Center("sends reports"), Colors.blue_to_purple, Colorate.Vertical, interval=0.05, time=5)
+
 f = open('proxies.txt','wb')
 proxytype = 'http'
 if proxytype not in ['http', 'https', 'socks4', 'socks5']:
@@ -51,12 +56,11 @@ if option == 1:
         filename = input("Please enter where your proxies are stored. (eg etc/home/proxies.txt): ")
     load_proxies()
 
-print(menu)
 
 def report():
     global proxies
     while True:
-        r = requests.get(f'https://us.tiktok.com/aweme/v1/aweme/feedback/?aid=1988&app_language=en&app_name=tiktok_web&battery_info=0.42&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F103.0.5060.66%20Safari%2F537.36%20Edg%2F103.0.1264.44&channel=tiktok_web&cookie_enabled=true&current_region=US&device_id=7116707009827718698&device_platform=web_pc&focus_state=true&from_page=user&history_len=8&is_fullscreen=false&is_page_visible=true&lang=en&nickname=ben.%20runs12gangddf2&object_id=7116236332540232750&os=windows&owner_id=7116236332540232750&priority_region=NL&reason=9013&referer=https%3A%2F%2Fwww.tiktok.com%2F%40ben.runs12gangg&region=US&report_type=user&reporter_id=7116518794030531630&root_referer=https%3A%2F%2Fwww.tiktok.com%2Flogout%3Fredirect_url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540ztlollollol2doxed&screen_height=864&screen_width=1536&secUid=MS4wLjABAAAA-5y6BCfw4PNw8m9u7L90AfzvbNoIgfoopB2wZSZukVvpRDo0UxiTHQ7EJ5qkNIhv&target=7116236332540232750&tz_name=America%2FNew_York&verifyFp=verify_55f301cb25c403104636169dcceb05e1&webcast_language=en&msToken=Q4zHGi2O2ekK91VlOZzf7q0_6jLvEhiXCl7eONtdUdLDGtGm6GdHrVfyVCSaJIo1EelBB3SwZdGrjhqJRpNUHX6N8L1S8JqKhBqfcss7SVNs_vDaBZ1INHKOQG4D2w==&X-Bogus=DFSzswVuFaTANS8-S1U9GcYklTIk&_signature=_02B4Z6wo000014rzKnwAAIDCVIVy2oUTGa-K8y7AAICH48')
+        r = requests.get(f'your url')
         if r.status_code == 200:
             print(Fore.MAGENTA, r.text)
             print(Colorate.Horizontal(Colors.green_to_red, 'reported that fag!'))
